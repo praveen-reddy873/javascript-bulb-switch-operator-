@@ -1,0 +1,111 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full screen dark background */
+.dark-background {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.items-alignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Images */
+.bulb-image {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.cat-image {
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+/* Switch box */
+.switch-board {
+  background-color: #7b8794;
+  width: 294px;
+  height: auto;
+  border-radius: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 16px;
+}
+
+/* Status text */
+.switch-status {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.off-switch,
+.on-switch {
+  width: 100px;
+  padding: 10px;
+  margin: 5px;
+  border:2px solid transparent;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.off-switch {
+  background-color: #cbd2d9;
+  color: white;
+}
+
+.on-switch {
+   background-color: green;
+  color: white;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .cat-image {
+    width: 200px;
+  }
+
+  .bulb-image {
+    width: 90px;
+  }
+
+  .switch-board {
+    width: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cat-image {
+    width: 170px;
+  }
+
+  .bulb-image {
+    width: 80px;
+  }
+
+  .switch-board {
+    width: 220px;
+  }
+
+  .off-switch,
+  .on-switch {
+    width: 90px;
+    font-size: 14px;
+  }
+}
